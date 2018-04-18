@@ -48,6 +48,7 @@ class MainActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         cancelRace()
+        channel.close()
     }
 
     private fun cancelRace() {
